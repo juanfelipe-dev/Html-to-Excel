@@ -42,6 +42,8 @@ Notes
 - The converter uses `pandas.read_html` to extract tables. If your HTML uses non-table markup, additional parsing logic will be needed.
 - If a file contains multiple tables, each will become `Sheet1`, `Sheet2`, etc.
 
+**Note:** the render deployment script requires `gunicorn` which is now included in `requirements.txt`.
+
 ## Deploying on Render.com
 
 You can host this project on Render as a Python web service. Create a `run_start.sh` script (included) with the following content:
